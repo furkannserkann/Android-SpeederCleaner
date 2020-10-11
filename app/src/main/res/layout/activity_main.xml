@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/info"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_gravity="end"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_info"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.furkany.speeder_cleaner.custom.ButtonCleaner.views.AppIconView
+                android:id="@+id/icon"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewStorageName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:gravity="center"
+                    android:text="Kullanılan Hafıza: %"
+                    android:textColor="#FFF"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textViewStorageYuzde"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:gravity="center"
+                    android:text="32"
+                    android:textColor="#FFF"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textViewUsingStorage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:gravity="right"
+                    android:text="6.3 GB / 16 GB"
+                    android:textColor="#FFF"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <com.akexorcist.roundcornerprogressbar.IconRoundCornerProgressBar
+                android:id="@+id/progressStorage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                app:rcBackgroundColor="@color/colorAccent"
+                app:rcBackgroundPadding="2dp"
+                app:rcIconBackgroundColor="@color/colorProgressIconBack"
+                app:rcIconPadding="5dp"
+                app:rcIconSize="39dp"
+                app:rcIconSrc="@mipmap/storage"
+                app:rcMax="100"
+                app:rcProgress="0"
+                app:rcProgressColor="@color/colorPrimaryDark"
+                app:rcRadius="5dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewMemoryName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:gravity="center"
+                    android:text="Kullanılan Ram: %"
+                    android:textColor="#FFF"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textViewMemoryYuzde"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:gravity="center"
+                    android:text="56"
+                    android:textColor="#FFF"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textViewUsingMemory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:gravity="right"
+                    android:text="2.2 GB / 4 GB"
+                    android:textColor="#FFF"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <com.akexorcist.roundcornerprogressbar.IconRoundCornerProgressBar
+                android:id="@+id/progressMemory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="2dp"
+                app:rcBackgroundColor="@color/colorAccent"
+                app:rcBackgroundPadding="2dp"
+                app:rcIconBackgroundColor="@color/colorProgressIconBack"
+                app:rcIconPadding="5dp"
+                app:rcIconSize="39dp"
+                app:rcIconSrc="@mipmap/memory"
+                app:rcMax="100"
+                app:rcProgress="0"
+                app:rcProgressColor="@color/colorPrimaryDark"
+                app:rcRadius="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewAppname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="?android:textColorPrimaryInverse"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="?android:textColorSecondaryInverse"
+                android:textSize="14sp" />
+
+            <james.buttons.Button
+                android:id="@+id/clean"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="24dp"
+                android:text="Speed Booster"
+                android:textSize="15sp"
+                app:backgroundColor="@android:color/white"
+                app:backgroundType="roundOutline" />
+
+            <TextView
+                android:id="@+id/textViewPrivatepolicy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:text="private policy"
+                android:textAlignment="center"
+                android:textColor="#00009f"
+                android:textIsSelectable="false"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
